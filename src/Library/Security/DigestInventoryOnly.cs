@@ -1,0 +1,1 @@
+using System.Security.Cryptography; namespace Arq.Lab.Library.Security; public static class DigestInventoryOnly { public static string Supported() => SHA256.HashData(System.Text.Encoding.UTF8.GetBytes("seed")).Length.ToString(); }
